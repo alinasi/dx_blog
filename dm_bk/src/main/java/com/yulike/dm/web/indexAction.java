@@ -21,4 +21,9 @@ public class indexAction implements Serializable{
         System.out.println("user_name ===================== " + user.getUserName());
         return "index";
     }
+
+    @RequestMapping("/blog")
+    public String blog(){
+        return "/front/blog";
+    }
 }
